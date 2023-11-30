@@ -1,0 +1,146 @@
+<!doctype html>
+<!--<html lang="eng" dir="rtl">-->
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <title>
+    {% block title %} {% endblock title %} - MyTodo
+  </title>
+</head>
+
+<body>
+  <div class="background-image">
+    <div class="container ">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      </ul>
+
+    </div>
+    
+  </nav>
+  {% block body %}
+
+  {% endblock body %}
+</div>
+</body>
+
+<style>
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.header{
+      font: 20px;
+  }
+
+.center1{
+  width: 50%;
+  margin: 0 auto;
+}
+
+  /* Background image styles */
+  .background-image {
+    background-image: url(https://images.pexels.com/photos/317353/pexels-photo-317353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+ 
+  }
+
+
+.content {
+    text-align: center;
+    color: white; /* Adjust the text color for better visibility */
+}
+
+/* Make the text bold */
+body, .content {
+    font-weight: bold;
+}
+
+
+form {
+      background-color: none; /* White background with transparency */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 500px;
+    }
+
+    
+    input[type ="text"]{
+      background-color: transparent;
+      border: none;
+      border-bottom: black 3px solid;
+      outline: none;
+      border-radius: 0%;
+    }
+    input[type ="text"]:focus{
+      background-color: transparent;
+      border: none;
+      border-bottom: black 3px solid;
+      outline: none;
+      /* border-style: none; */
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff; /* White background for input */
+      color: #333;
+    }
+
+    .btn-primary {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background-color: #45a049;
+      border-color: none;
+    }
+    table {
+      background-color: transparent;
+      border-collapse: collapse;
+    }
+
+    table tr {
+      background-color: transparent;
+    }
+
+    table tr td{
+      background-color: transparent;
+    }
+
+</style>
+
+
+
+</html>
